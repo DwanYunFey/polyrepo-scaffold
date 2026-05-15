@@ -1,7 +1,7 @@
 #!/bin/bash
-# create_dirs.sh
-# 幂等创建 workspace 目录结构并执行仓库克隆
-# 用法: ./create_dirs.sh <workspace_root>
+# init.sh
+# 幂等创建 方便软件开发人员开发的目录结构并执行批量克隆软件仓库
+# 用法: ./init.sh <workspace_root>
 
 set -e
 
@@ -12,19 +12,24 @@ if [ -z "$WORKSPACE_ROOT" ]; then
     exit 1
 fi
 
-echo "创建 workspace 目录: $WORKSPACE_ROOT"
+echo "创建 开发环境目录: $WORKSPACE_ROOT"
 
 # 顶层目录（每行一个 mkdir -p，保证幂等性）
-mkdir -p "$WORKSPACE_ROOT/repos"
-mkdir -p "$WORKSPACE_ROOT/features"
-mkdir -p "$WORKSPACE_ROOT/experiments"
-mkdir -p "$WORKSPACE_ROOT/tools/git"
-mkdir -p "$WORKSPACE_ROOT/docs/architecture"
-mkdir -p "$WORKSPACE_ROOT/docs/api"
-mkdir -p "$WORKSPACE_ROOT/docs/decisions"
-mkdir -p "$WORKSPACE_ROOT/tmp/json"
-mkdir -p "$WORKSPACE_ROOT/tmp/logs"
-mkdir -p "$WORKSPACE_ROOT/tmp/scripts"
+mkdir -p "$WORKSPACE_ROOT/repos" # 软件仓库；每一个子目录代表一个git项目
+mkdir -p "$WORKSPACE_ROOT/features" # 需求开发；每一个子目录代表一个需求开发任务
+mkdir -p "$WORKSPACE_ROOT/labs" # 实验代码：某些
+mkdir -p "$WORKSPACE_ROOT/labs/json" # 实验代码：某些
+touch "$WORKSPACE_ROOT/labs/json/1.json" # cmd+p 输入1快速打开
+mkdir -p "$WORKSPACE_ROOT/labs/logs" # 实验代码：某些
+touch "$WORKSPACE_ROOT/labs/logs/2.log" # cmd+p 输入1快速打开
+mkdir -p "$WORKSPACE_ROOT/tools/git" # git 批量化操作工具
+mkdir -p "$WORKSPACE_ROOT/docs/read" # 阅读项目代码的记录
+mkdir -p "$WORKSPACE_ROOT/docs/plan" # 需求开发记录
+mkdir -p "$WORKSPACE_ROOT/tmp/json" # JSON 临时文件
+touch "$WORKSPACE_ROOT/tmp/json/1.json" # cmd+p 输入1快速打开
+mkdir -p "$WORKSPACE_ROOT/tmp/logs" # 日志文件
+touch "$WORKSPACE_ROOT/tmp/logs/2.log" # cmd+p 输入1快速打开
+mkdir -p "$WORKSPACE_ROOT/tmp/scripts" # 不常用的放这里；常用的放"$WORKSPACE_ROOT/tools/"
 
 # 创建 .cursor 文件，如果不存在
 CURSOR_FILE="$WORKSPACE_ROOT/.cursor"

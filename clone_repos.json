@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_unicorn/watcher.git",
+    "args": "--single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_xueyan_oa/baseinfo.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_xueyan_oa/queueworker.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_xueyan_oa/oagateway.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_unicorn/hwapi.xesv5.com.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_jiaoguan_php/oat.xueersi.com.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_unicorn/quize.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_unicorn/homework.git",
+    "args": "--branch xwx_syh --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_xueyan_oa/common.git",
+    "args": "--branch xwx_xuefu --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_go_lib/xesSDK.git",
+    "args": "--branch xwx_xuefu --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_go_lib/xesTools.git",
+    "args": "--branch xwx_xuefu --single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/xue/bigclass_go_lib/xesGoKit.git",
+    "args": "--single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/backend/xuefugo/hc-smart-ai.git",
+    "args": "--single-branch"
+  },
+  {
+    "url": "https://codeup.aliyun.com/61e54b0e0bb300d827e1ae27/backend/xuefu.git",
+    "args": "--single-branch"
+  }
+]
