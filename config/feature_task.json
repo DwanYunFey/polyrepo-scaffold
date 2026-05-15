@@ -1,0 +1,9 @@
+{
+    "feature_id": "VLHQ-4915",
+    "description": "https://devops.aliyun.com/projex/req/VLHQ-4915# 《2、P2【批改】考试支持ai预批改》",
+    "repos": [
+        "quize",
+        "common",
+        "homework"
+    ]
+}
